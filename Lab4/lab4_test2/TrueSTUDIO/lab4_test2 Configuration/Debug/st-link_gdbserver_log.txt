@@ -1,0 +1,578 @@
+[1.859]  STM32_AppReset():  Enter STM32_AppReset() function 
+[2.062]  STM32_AppReset():  NVIC_DFSR_REG	= 0x00000009
+[2.078]  STM32_AppReset():  NVIC_CFGFSR_REG	= 0x00000000
+[2.093]  STM32_AppReset():  XPSR = 0x01000000
+[2.093]  STM32_InitDevice():  ST_LINK Major version =2 Jtag version =24
+[2.093]  STM32_InitDevice():  ST_LINK VID=1155 PID=14155
+[2.093]  STM32_InitDevice():  ST_LINK device status: HALT_MODE
+[2.093]  STM32_InitDevice():  ST_LINK detects target voltage =3.28 Volt
+[2.125]  stm32_reset_hw_wtchpt_module():  Hardware watchpoint supported by the target 
+[2.187]  create_stm32_flash_device():  FuncEntry
+[2.203]  create_stm32_flash_device():  STM32 device: id =10006431 
+[2.203]  create_stm32_flash_device():  STM32 device: Flash size =1024
+[2.203]  create_stm32_flash_device():  FuncExit
+[2.203]  read_f2_option_bytes():  FuncEntry
+[2.250]  read_f2_option_bytes():  FuncExit
+[2.250]  main():  Start Logging
+[2.265]  Socket_WaitForTrueStudioConnection():  Waiting for TrueSTUDIO client to connect on port 61234 ...
+[2.656]  Socket_WaitForTrueStudioConnection():  TrueSTUDIO client connected.
+[2.656]  Socket_WaitForTrueStudioConnection():  Receive buffer size set to 65536 bytes.
+[2.656]  Socket_Write():  Tx: #56f8$
+
+[2.656]  Socket_Read():  Rx: #51d$
+
+[2.656]  Socket_WaitForNewConnection():  Waiting for GDB client to connect on port 61234 ...
+[2.687]  Socket_WaitForNewConnection():  Client connected.
+[2.687]  Socket_WaitForNewConnection():  Receive buffer size set to 65536 bytes.
+[2.703]  STM32_GetStatus():  ST_LINK device status: HALT_MODE
+[2.703]  Socket_Read():  Rx: +$qSupported:multiprocess+;qRelocInsn+#2a
+[2.812]  Socket_Write():  Tx: +
+[2.812]  Socket_Write():  Tx: $PacketSize=c00;qXfer:memory-map:read+;qXfer:features:read+;QStartNoAckMode+;multiprocess-#f6
+[2.812]  Socket_Read():  Rx: +
+[2.812]  Socket_Read():  Rx: $QStartNoAckMode#b0
+[2.812]  Socket_Write():  Tx: +
+[2.812]  Socket_Write():  Tx: $OK#9a#00
+[2.812]  Socket_Read():  Rx: +
+[2.812]  Socket_Read():  Rx: $!#21
+[2.812]  Socket_Write():  Tx: +
+[2.812]  Socket_Write():  Tx: $OK#9a
+[2.812]  Socket_Read():  Rx: $Hg0#df
+[2.812]  Socket_Write():  Tx: +
+[2.812]  Socket_Write():  Tx: $#00
+[2.812]  Socket_Read():  Rx: $qXfer:features:read:target.xml:0,bfb#75
+[2.812]  Socket_Write():  Tx: +
+[2.812]  Socket_Write():  Tx: $l<?xml version="1.0"?><!-- Copyright (C) 2009, 2010, 2011 Free Software Foundation, Inc.     Copying and distribution of this file, with or without modification,     are permitted in any medium without royalty provided the copyright     notice and this notice are preserved.  --><!DOCTYPE target SYSTEM "gdb-target.dtd"><target><feature name="org.gnu.gdb.arm.m-profile">  <reg name="r0" bitsize="32"/>  <reg name="r1" bitsize="32"/>  <reg name="r2" bitsize="32"/>  <reg name="r3" bitsize="32"/>  <reg name="r4" bitsize="32"/>  <reg name="r5" bitsize="32"/>  <reg name="r6" bitsize="32"/>  <reg name="r7" bitsize="32"/>  <reg name="r8" bitsize="32"/>  <reg name="r9" bitsize="32"/>  <reg name="r10" bitsize="32"/>  <reg name="r11" bitsize="32"/>  <reg name="r12" bitsize="32"/>  <reg name="sp" bitsize="32" type="data_ptr"/>  <reg name="lr" bitsize="32"/>  <reg name="pc" bitsize="32" type="code_ptr"/>  <reg name="xpsr" bitsize="32" regnum="25"/></feature><feature name="org.gnu.gdb.arm.vfp">  <reg name="d0" bitsize="64" type="ieee_double"/>  <reg name="d1" bitsize="64" type="ieee_double"/>  <reg name="d2" bitsize="64" type="ieee_double"/>  <reg name="d3" bitsize="64" type="ieee_double"/>  <reg name="d4" bitsize="64" type="ieee_double"/>  <reg name="d5" bitsize="64" type="ieee_double"/>  <reg name="d6" bitsize="64" type="ieee_double"/>  <reg name="d7" bitsize="64" type="ieee_double"/>  <reg name="d8" bitsize="64" type="ieee_double"/>  <reg name="d9" bitsize="64" type="ieee_double"/>  <reg name="d10" bitsize="64" type="ieee_double"/>  <reg name="d11" bitsize="64" type="ieee_double"/>  <reg name="d12" bitsize="64" type="ieee_double"/>  <reg name="d13" bitsize="64" type="ieee_double"/>  <reg name="d14" bitsize="64" type="ieee_double"/>  <reg name="d15" bitsize="64" type="ieee_double"/>  <reg name="fpscr" bitsize="32" type="int" group="float"/>  <reg name="PRIMASK" bitsize="32" regnum="93"/>  <reg name="BASEPRI" bitsize="32" regnum="94"/>  <reg name="FAULTMASK" bitsize="32" regnum="95"/>  <reg name="CONTROL" bitsize="32" regnum="96"/>  <reg name="MSP" bitsize="32" regnum="97"/>  <reg name="PSP" bitsize="32" regnum="98"/>		</feature></target>#3c
+[2.812]  Socket_Read():  Rx: $?#3f
+[2.812]  Socket_Write():  Tx: +
+[2.812]  Socket_Write():  Tx: $S02#b5
+[2.812]  Socket_Read():  Rx: $Hc-1#09
+[2.812]  Socket_Write():  Tx: +
+[2.812]  Socket_Write():  Tx: $#00
+[2.812]  Socket_Read():  Rx: $qC#b4
+[2.812]  Socket_Write():  Tx: +
+[2.812]  Socket_Write():  Tx: $#00
+[2.812]  Socket_Read():  Rx: $qAttached#8f
+[2.812]  Socket_Write():  Tx: +
+[2.812]  Socket_Write():  Tx: $#00
+[2.812]  Socket_Read():  Rx: $qOffsets#4b
+[2.812]  Socket_Write():  Tx: +
+[2.812]  Socket_Write():  Tx: $#00
+[2.812]  Socket_Read():  Rx: $g#67
+[2.812]  Socket_Write():  Tx: +
+[2.828]  Socket_Write():  Tx: $0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000220ffffffffe422000800000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022000000000#fe
+[2.828]  Socket_Read():  Rx: $qXfer:memory-map:read::0,bfb#14
+[2.828]  Socket_Write():  Tx: +
+[2.828]  Socket_Write():  Tx: $l<memory-map>
+<memory type="ram" start="0x0" length="0x8000000"/>
+<memory type="flash" start="0x8000000" length="0x100000">
+<property name="blocksize">0x4000</property>
+</memory>
+<memory type="ram" start="0x8100000" length="0xf7f00000"/>
+</memory-map>#17
+[2.828]  Socket_Read():  Rx: $m80022e4,4#62
+[2.828]  Socket_Write():  Tx: +
+[2.828]  handle_packet():  Reading 0x4 bytes of memory from addr 0x80022e4 
+[2.843]  Socket_Write():  Tx: $002100f0#b9
+[2.843]  Socket_Read():  Rx: $qSymbol::#5b
+[2.843]  Socket_Write():  Tx: +
+[2.843]  Socket_Write():  Tx: $#00
+[2.890]  Socket_Read():  Rx: $qTStatus#49
+[2.890]  Socket_Write():  Tx: +
+[2.890]  Socket_Write():  Tx: $#00
+[3.062]  Socket_Read():  Rx: $qfThreadInfo#bb
+[3.062]  Socket_Write():  Tx: +
+[3.062]  Socket_Write():  Tx: $l#6c
+[3.343]  Socket_Read():  Rx: $qTStatus#49
+[3.343]  Socket_Write():  Tx: +
+[3.343]  Socket_Write():  Tx: $#00
+[3.390]  Socket_Read():  Rx: $qTStatus#49
+[3.390]  Socket_Write():  Tx: +
+[3.390]  Socket_Write():  Tx: $#00
+[3.437]  Socket_Read():  Rx: $m800186c,2#65
+[3.437]  Socket_Write():  Tx: +
+[3.437]  handle_packet():  Reading 0x2 bytes of memory from addr 0x800186c 
+[3.468]  Socket_Write():  Tx: $99fb#3a
+[3.468]  Socket_Read():  Rx: $m8001868,2#3a
+[3.468]  Socket_Write():  Tx: +
+[3.468]  handle_packet():  Reading 0x2 bytes of memory from addr 0x8001868 
+[3.468]  Socket_Write():  Tx: $e1d5#2f
+[3.468]  Socket_Read():  Rx: $qTStatus#49
+[3.468]  Socket_Write():  Tx: +
+[3.468]  Socket_Write():  Tx: $#00
+[3.500]  Socket_Read():  Rx: $qfThreadInfo#bb
+[3.500]  Socket_Write():  Tx: +
+[3.500]  Socket_Write():  Tx: $l#6c
+[3.515]  Socket_Read():  Rx: $qRcmd,666c617368207365745f706172616c6c656c69736d5f6d6f64652032#58
+[3.515]  Socket_Write():  Tx: +
+[3.515]  stm32_f2_set_parallelism_mode():  FuncEntry
+[3.515]  unlock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[3.515]  flash_f2_wait_for_last_operation():  FuncEntry
+[3.515]  flash_f2_get_busy_status():  FuncEntry
+[3.515]  flash_f2_get_busy_status():  FuncExit
+[3.515]  flash_f2_wait_for_last_operation():  FuncExit
+[3.562]  stm32_f2_set_parallelism_mode():  FuncExit
+[3.562]  lock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[3.562]  flash_f2_wait_for_last_operation():  FuncEntry
+[3.562]  flash_f2_get_busy_status():  FuncEntry
+[3.578]  flash_f2_get_busy_status():  FuncExit
+[3.578]  flash_f2_wait_for_last_operation():  FuncExit
+[3.593]  lock_flash_f2_prg_and_erase_ctrler():  FuncExit
+[3.593]  Socket_Write():  Tx: $O5375636365737366756c6c792073657420706172616c6c656c69736d206d6f646520746f20320a
+[3.593]  Socket_Read():  Rx: $vFlashErase:08000000,00004000#c6
+[3.593]  Socket_Write():  Tx: +
+[3.593]  stm32_f2_flash_page_erase():  FuncEntry
+[3.593]  unlock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[3.593]  flash_f2_wait_for_last_operation():  FuncEntry
+[3.593]  flash_f2_get_busy_status():  FuncEntry
+[3.609]  flash_f2_get_busy_status():  FuncExit
+[3.609]  flash_f2_wait_for_last_operation():  FuncExit
+[3.640]  flash_f2_wait_for_last_operation():  FuncEntry
+[3.640]  flash_f2_get_busy_status():  FuncEntry
+[3.656]  flash_f2_get_busy_status():  FuncExit
+[3.656]  flash_f2_wait_for_last_operation():  FuncExit
+[3.671]  get_f2_flash_error_status():  FuncEntry
+[3.671]  flash_f2_wait_for_last_operation():  FuncEntry
+[3.671]  flash_f2_get_busy_status():  FuncEntry
+[3.750]  flash_f2_get_busy_status():  FuncExit
+[3.750]  flash_f2_wait_for_last_operation():  FuncExit
+[3.765]  get_f2_flash_error_status():  FuncExit
+[3.765]  flash_f2_wait_for_last_operation():  FuncEntry
+[3.765]  flash_f2_get_busy_status():  FuncEntry
+[3.781]  flash_f2_get_busy_status():  FuncExit
+[3.781]  flash_f2_wait_for_last_operation():  FuncExit
+[3.812]  flash_f2_wait_for_last_operation():  FuncEntry
+[3.812]  flash_f2_get_busy_status():  FuncEntry
+[3.812]  flash_f2_get_busy_status():  FuncExit
+[3.812]  flash_f2_get_busy_status():  FuncEntry
+[3.828]  flash_f2_get_busy_status():  FuncExit
+[3.828]  flash_f2_get_busy_status():  FuncEntry
+[3.828]  flash_f2_get_busy_status():  FuncExit
+[3.828]  flash_f2_get_busy_status():  FuncEntry
+[3.843]  flash_f2_get_busy_status():  FuncExit
+[3.843]  flash_f2_get_busy_status():  FuncEntry
+[3.843]  flash_f2_get_busy_status():  FuncExit
+[3.843]  flash_f2_get_busy_status():  FuncEntry
+[3.859]  flash_f2_get_busy_status():  FuncExit
+[3.859]  flash_f2_get_busy_status():  FuncEntry
+[3.859]  flash_f2_get_busy_status():  FuncExit
+[3.859]  flash_f2_get_busy_status():  FuncEntry
+[3.875]  flash_f2_get_busy_status():  FuncExit
+[3.875]  flash_f2_get_busy_status():  FuncEntry
+[3.890]  flash_f2_get_busy_status():  FuncExit
+[3.890]  flash_f2_get_busy_status():  FuncEntry
+[3.890]  flash_f2_get_busy_status():  FuncExit
+[3.890]  flash_f2_get_busy_status():  FuncEntry
+[3.906]  flash_f2_get_busy_status():  FuncExit
+[3.906]  flash_f2_get_busy_status():  FuncEntry
+[3.906]  flash_f2_get_busy_status():  FuncExit
+[3.906]  flash_f2_get_busy_status():  FuncEntry
+[3.921]  flash_f2_get_busy_status():  FuncExit
+[3.921]  flash_f2_get_busy_status():  FuncEntry
+[3.921]  flash_f2_get_busy_status():  FuncExit
+[3.921]  flash_f2_get_busy_status():  FuncEntry
+[3.937]  flash_f2_get_busy_status():  FuncExit
+[3.937]  flash_f2_get_busy_status():  FuncEntry
+[3.937]  flash_f2_get_busy_status():  FuncExit
+[3.937]  flash_f2_get_busy_status():  FuncEntry
+[3.953]  flash_f2_get_busy_status():  FuncExit
+[3.953]  flash_f2_get_busy_status():  FuncEntry
+[3.953]  flash_f2_get_busy_status():  FuncExit
+[3.953]  flash_f2_get_busy_status():  FuncEntry
+[3.968]  flash_f2_get_busy_status():  FuncExit
+[3.968]  flash_f2_get_busy_status():  FuncEntry
+[3.968]  flash_f2_get_busy_status():  FuncExit
+[3.968]  flash_f2_get_busy_status():  FuncEntry
+[3.984]  flash_f2_get_busy_status():  FuncExit
+[3.984]  flash_f2_get_busy_status():  FuncEntry
+[4.000]  flash_f2_get_busy_status():  FuncExit
+[4.000]  flash_f2_get_busy_status():  FuncEntry
+[4.000]  flash_f2_get_busy_status():  FuncExit
+[4.000]  flash_f2_get_busy_status():  FuncEntry
+[4.015]  flash_f2_get_busy_status():  FuncExit
+[4.015]  flash_f2_get_busy_status():  FuncEntry
+[4.015]  flash_f2_get_busy_status():  FuncExit
+[4.015]  flash_f2_get_busy_status():  FuncEntry
+[4.031]  flash_f2_get_busy_status():  FuncExit
+[4.031]  flash_f2_get_busy_status():  FuncEntry
+[4.031]  flash_f2_get_busy_status():  FuncExit
+[4.031]  flash_f2_get_busy_status():  FuncEntry
+[4.046]  flash_f2_get_busy_status():  FuncExit
+[4.046]  flash_f2_wait_for_last_operation():  FuncExit
+[4.062]  get_f2_flash_error_status():  FuncEntry
+[4.062]  flash_f2_wait_for_last_operation():  FuncEntry
+[4.062]  flash_f2_get_busy_status():  FuncEntry
+[4.062]  flash_f2_get_busy_status():  FuncExit
+[4.062]  flash_f2_wait_for_last_operation():  FuncExit
+[4.078]  get_f2_flash_error_status():  FuncExit
+[4.093]  lock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[4.093]  flash_f2_wait_for_last_operation():  FuncEntry
+[4.093]  flash_f2_get_busy_status():  FuncEntry
+[4.093]  flash_f2_get_busy_status():  FuncExit
+[4.093]  flash_f2_wait_for_last_operation():  FuncExit
+[4.125]  lock_flash_f2_prg_and_erase_ctrler():  FuncExit
+[4.125]  Socket_Write():  Tx: $OK#9a#00
+[4.125]  Socket_Read():  Rx: $vFlashWrite:8000000:
+[4.125]  Socket_Write():  Tx: +
+[4.125]  stm32_f2_program_flash_memory():  FuncEntry
+[4.125]  unlock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[4.125]  flash_f2_wait_for_last_operation():  FuncEntry
+[4.125]  flash_f2_get_busy_status():  FuncEntry
+[4.125]  flash_f2_get_busy_status():  FuncExit
+[4.125]  flash_f2_wait_for_last_operation():  FuncExit
+[4.171]  flash_f2_wait_for_last_operation():  FuncEntry
+[4.171]  flash_f2_get_busy_status():  FuncEntry
+[4.171]  flash_f2_get_busy_status():  FuncExit
+[4.171]  flash_f2_wait_for_last_operation():  FuncExit
+[4.312]  stm32_f2_program_flash_memory():  Programming flash.. 8000000 408 
+[4.328]  get_f2_flash_error_status():  FuncEntry
+[4.328]  flash_f2_wait_for_last_operation():  FuncEntry
+[4.328]  flash_f2_get_busy_status():  FuncEntry
+[4.328]  flash_f2_get_busy_status():  FuncExit
+[4.328]  flash_f2_wait_for_last_operation():  FuncExit
+[4.343]  get_f2_flash_error_status():  FuncExit
+[4.359]  lock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[4.359]  flash_f2_wait_for_last_operation():  FuncEntry
+[4.359]  flash_f2_get_busy_status():  FuncEntry
+[4.375]  flash_f2_get_busy_status():  FuncExit
+[4.375]  flash_f2_wait_for_last_operation():  FuncExit
+[4.390]  lock_flash_f2_prg_and_erase_ctrler():  FuncExit
+[4.406]  stm32_f2_program_flash_memory():  STM32 device: flash programming successful 0x8000000 
+[4.406]  stm32_f2_program_flash_memory():  FuncExit
+[4.406]  Socket_Write():  Tx: $OK#9a#00
+[4.406]  Socket_Read():  Rx: $vFlashWrite:8000198:µL}x3¹K±H¯ó
+[4.406]  Socket_Write():  Tx: +
+[4.406]  stm32_f2_program_flash_memory():  FuncEntry
+[4.406]  unlock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[4.406]  flash_f2_wait_for_last_operation():  FuncEntry
+[4.406]  flash_f2_get_busy_status():  FuncEntry
+[4.406]  flash_f2_get_busy_status():  FuncExit
+[4.406]  flash_f2_wait_for_last_operation():  FuncExit
+[4.437]  flash_f2_wait_for_last_operation():  FuncEntry
+[4.437]  flash_f2_get_busy_status():  FuncEntry
+[4.453]  flash_f2_get_busy_status():  FuncExit
+[4.453]  flash_f2_wait_for_last_operation():  FuncExit
+[4.687]  stm32_f2_program_flash_memory():  Programming flash.. 8000198 3000 
+[4.703]  stm32_f2_program_flash_memory():  Programming flash.. 8000198 3000 
+[4.703]  stm32_f2_program_flash_memory():  Programming flash.. 8000198 3000 
+[4.703]  get_f2_flash_error_status():  FuncEntry
+[4.703]  flash_f2_wait_for_last_operation():  FuncEntry
+[4.703]  flash_f2_get_busy_status():  FuncEntry
+[4.718]  flash_f2_get_busy_status():  FuncExit
+[4.718]  flash_f2_wait_for_last_operation():  FuncExit
+[4.734]  get_f2_flash_error_status():  FuncExit
+[4.750]  lock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[4.750]  flash_f2_wait_for_last_operation():  FuncEntry
+[4.750]  flash_f2_get_busy_status():  FuncEntry
+[4.750]  flash_f2_get_busy_status():  FuncExit
+[4.750]  flash_f2_wait_for_last_operation():  FuncExit
+[4.781]  lock_flash_f2_prg_and_erase_ctrler():  FuncExit
+[4.828]  stm32_f2_program_flash_memory():  STM32 device: flash programming successful 0x8000198 
+[4.828]  stm32_f2_program_flash_memory():  FuncExit
+[4.843]  Socket_Write():  Tx: $OK#9a#00
+[4.843]  Socket_Read():  Rx: $vFlashWrite:8000d50:àF
+[4.843]  Socket_Write():  Tx: +
+[4.843]  stm32_f2_program_flash_memory():  FuncEntry
+[4.843]  unlock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[4.843]  flash_f2_wait_for_last_operation():  FuncEntry
+[4.843]  flash_f2_get_busy_status():  FuncEntry
+[4.843]  flash_f2_get_busy_status():  FuncExit
+[4.843]  flash_f2_wait_for_last_operation():  FuncExit
+[4.875]  flash_f2_wait_for_last_operation():  FuncEntry
+[4.875]  flash_f2_get_busy_status():  FuncEntry
+[4.875]  flash_f2_get_busy_status():  FuncExit
+[4.875]  flash_f2_wait_for_last_operation():  FuncExit
+[5.125]  stm32_f2_program_flash_memory():  Programming flash.. 8000d50 2992 
+[5.125]  stm32_f2_program_flash_memory():  Programming flash.. 8000d50 2992 
+[5.125]  stm32_f2_program_flash_memory():  Programming flash.. 8000d50 2992 
+[5.125]  get_f2_flash_error_status():  FuncEntry
+[5.125]  flash_f2_wait_for_last_operation():  FuncEntry
+[5.125]  flash_f2_get_busy_status():  FuncEntry
+[5.140]  flash_f2_get_busy_status():  FuncExit
+[5.140]  flash_f2_wait_for_last_operation():  FuncExit
+[5.156]  get_f2_flash_error_status():  FuncExit
+[5.171]  lock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[5.171]  flash_f2_wait_for_last_operation():  FuncEntry
+[5.171]  flash_f2_get_busy_status():  FuncEntry
+[5.171]  flash_f2_get_busy_status():  FuncExit
+[5.171]  flash_f2_wait_for_last_operation():  FuncExit
+[5.203]  lock_flash_f2_prg_and_erase_ctrler():  FuncExit
+[5.250]  stm32_f2_program_flash_memory():  STM32 device: flash programming successful 0x8000d50 
+[5.250]  stm32_f2_program_flash_memory():  FuncExit
+[5.250]  Socket_Write():  Tx: $OK#9a#00
+[5.250]  Socket_Read():  Rx: $vFlashWrite:8001900:}©“”ÿ÷ŠýÎ­Å3h+`!F¨ÿ÷vúK`ÿ÷…ÿÿ÷kúþç
+[5.250]  Socket_Write():  Tx: +
+[5.250]  stm32_f2_program_flash_memory():  FuncEntry
+[5.250]  unlock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[5.250]  flash_f2_wait_for_last_operation():  FuncEntry
+[5.250]  flash_f2_get_busy_status():  FuncEntry
+[5.265]  flash_f2_get_busy_status():  FuncExit
+[5.265]  flash_f2_wait_for_last_operation():  FuncExit
+[5.296]  flash_f2_wait_for_last_operation():  FuncEntry
+[5.296]  flash_f2_get_busy_status():  FuncEntry
+[5.296]  flash_f2_get_busy_status():  FuncExit
+[5.296]  flash_f2_wait_for_last_operation():  FuncExit
+[5.453]  stm32_f2_program_flash_memory():  Programming flash.. 8001900 276 
+[5.453]  get_f2_flash_error_status():  FuncEntry
+[5.453]  flash_f2_wait_for_last_operation():  FuncEntry
+[5.453]  flash_f2_get_busy_status():  FuncEntry
+[5.453]  flash_f2_get_busy_status():  FuncExit
+[5.453]  flash_f2_wait_for_last_operation():  FuncExit
+[5.468]  get_f2_flash_error_status():  FuncExit
+[5.500]  lock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[5.500]  flash_f2_wait_for_last_operation():  FuncEntry
+[5.500]  flash_f2_get_busy_status():  FuncEntry
+[5.500]  flash_f2_get_busy_status():  FuncExit
+[5.500]  flash_f2_wait_for_last_operation():  FuncExit
+[5.515]  lock_flash_f2_prg_and_erase_ctrler():  FuncExit
+[5.531]  stm32_f2_program_flash_memory():  STM32 device: flash programming successful 0x8001900 
+[5.531]  stm32_f2_program_flash_memory():  FuncExit
+[5.531]  Socket_Write():  Tx: $OK#9a#00
+[5.531]  Socket_Read():  Rx: $vFlashWrite:8001a14:C
+[5.531]  Socket_Write():  Tx: +
+[5.531]  stm32_f2_program_flash_memory():  FuncEntry
+[5.531]  unlock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[5.531]  flash_f2_wait_for_last_operation():  FuncEntry
+[5.531]  flash_f2_get_busy_status():  FuncEntry
+[5.546]  flash_f2_get_busy_status():  FuncExit
+[5.546]  flash_f2_wait_for_last_operation():  FuncExit
+[5.578]  flash_f2_wait_for_last_operation():  FuncEntry
+[5.578]  flash_f2_get_busy_status():  FuncEntry
+[5.578]  flash_f2_get_busy_status():  FuncExit
+[5.578]  flash_f2_wait_for_last_operation():  FuncExit
+[5.718]  stm32_f2_program_flash_memory():  Programming flash.. 8001a14 60 
+[5.734]  get_f2_flash_error_status():  FuncEntry
+[5.734]  flash_f2_wait_for_last_operation():  FuncEntry
+[5.734]  flash_f2_get_busy_status():  FuncEntry
+[5.734]  flash_f2_get_busy_status():  FuncExit
+[5.734]  flash_f2_wait_for_last_operation():  FuncExit
+[5.750]  get_f2_flash_error_status():  FuncExit
+[5.765]  lock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[5.765]  flash_f2_wait_for_last_operation():  FuncEntry
+[5.765]  flash_f2_get_busy_status():  FuncEntry
+[5.781]  flash_f2_get_busy_status():  FuncExit
+[5.781]  flash_f2_wait_for_last_operation():  FuncExit
+[5.796]  lock_flash_f2_prg_and_erase_ctrler():  FuncExit
+[5.812]  stm32_f2_program_flash_memory():  STM32 device: flash programming successful 0x8001a14 
+[5.812]  stm32_f2_program_flash_memory():  FuncExit
+[5.812]  Socket_Write():  Tx: $OK#9a#00
+[5.812]  Socket_Read():  Rx: $vFlashWrite:8001a50:½
+[5.812]  Socket_Write():  Tx: +
+[5.812]  stm32_f2_program_flash_memory():  FuncEntry
+[5.812]  unlock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[5.812]  flash_f2_wait_for_last_operation():  FuncEntry
+[5.812]  flash_f2_get_busy_status():  FuncEntry
+[5.812]  flash_f2_get_busy_status():  FuncExit
+[5.812]  flash_f2_wait_for_last_operation():  FuncExit
+[5.843]  flash_f2_wait_for_last_operation():  FuncEntry
+[5.843]  flash_f2_get_busy_status():  FuncEntry
+[5.859]  flash_f2_get_busy_status():  FuncExit
+[5.859]  flash_f2_wait_for_last_operation():  FuncExit
+[6.000]  stm32_f2_program_flash_memory():  Programming flash.. 8001a50 4 
+[6.000]  get_f2_flash_error_status():  FuncEntry
+[6.000]  flash_f2_wait_for_last_operation():  FuncEntry
+[6.000]  flash_f2_get_busy_status():  FuncEntry
+[6.015]  flash_f2_get_busy_status():  FuncExit
+[6.015]  flash_f2_wait_for_last_operation():  FuncExit
+[6.031]  get_f2_flash_error_status():  FuncExit
+[6.046]  lock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[6.046]  flash_f2_wait_for_last_operation():  FuncEntry
+[6.046]  flash_f2_get_busy_status():  FuncEntry
+[6.046]  flash_f2_get_busy_status():  FuncExit
+[6.046]  flash_f2_wait_for_last_operation():  FuncExit
+[6.078]  lock_flash_f2_prg_and_erase_ctrler():  FuncExit
+[6.093]  stm32_f2_program_flash_memory():  STM32 device: flash programming successful 0x8001a50 
+[6.093]  stm32_f2_program_flash_memory():  FuncExit
+[6.093]  Socket_Write():  Tx: $OK#9a#00
+[6.093]  Socket_Read():  Rx: $vFlashWrite:8001a54:™
+[6.093]  Socket_Write():  Tx: +
+[6.093]  stm32_f2_program_flash_memory():  FuncEntry
+[6.093]  unlock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[6.093]  flash_f2_wait_for_last_operation():  FuncEntry
+[6.093]  flash_f2_get_busy_status():  FuncEntry
+[6.093]  flash_f2_get_busy_status():  FuncExit
+[6.093]  flash_f2_wait_for_last_operation():  FuncExit
+[6.125]  flash_f2_wait_for_last_operation():  FuncEntry
+[6.125]  flash_f2_get_busy_status():  FuncEntry
+[6.140]  flash_f2_get_busy_status():  FuncExit
+[6.140]  flash_f2_wait_for_last_operation():  FuncExit
+[6.281]  stm32_f2_program_flash_memory():  Programming flash.. 8001a54 4 
+[6.281]  get_f2_flash_error_status():  FuncEntry
+[6.281]  flash_f2_wait_for_last_operation():  FuncEntry
+[6.281]  flash_f2_get_busy_status():  FuncEntry
+[6.296]  flash_f2_get_busy_status():  FuncExit
+[6.296]  flash_f2_wait_for_last_operation():  FuncExit
+[6.312]  get_f2_flash_error_status():  FuncExit
+[6.328]  lock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[6.328]  flash_f2_wait_for_last_operation():  FuncEntry
+[6.328]  flash_f2_get_busy_status():  FuncEntry
+[6.328]  flash_f2_get_busy_status():  FuncExit
+[6.328]  flash_f2_wait_for_last_operation():  FuncExit
+[6.359]  lock_flash_f2_prg_and_erase_ctrler():  FuncExit
+[6.359]  stm32_f2_program_flash_memory():  STM32 device: flash programming successful 0x8001a54 
+[6.359]  stm32_f2_program_flash_memory():  FuncExit
+[6.359]  Socket_Write():  Tx: $OK#9a#00
+[6.359]  Socket_Read():  Rx: $vFlashWrite:8001a58:ÿÿÿÿªªªª
+[6.359]  Socket_Write():  Tx: +
+[6.359]  stm32_f2_program_flash_memory():  FuncEntry
+[6.359]  unlock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[6.359]  flash_f2_wait_for_last_operation():  FuncEntry
+[6.359]  flash_f2_get_busy_status():  FuncEntry
+[6.375]  flash_f2_get_busy_status():  FuncExit
+[6.375]  flash_f2_wait_for_last_operation():  FuncExit
+[6.406]  flash_f2_wait_for_last_operation():  FuncEntry
+[6.406]  flash_f2_get_busy_status():  FuncEntry
+[6.406]  flash_f2_get_busy_status():  FuncExit
+[6.406]  flash_f2_wait_for_last_operation():  FuncExit
+[6.546]  stm32_f2_program_flash_memory():  Programming flash.. 8001a58 12 
+[6.546]  get_f2_flash_error_status():  FuncEntry
+[6.546]  flash_f2_wait_for_last_operation():  FuncEntry
+[6.546]  flash_f2_get_busy_status():  FuncEntry
+[6.578]  flash_f2_get_busy_status():  FuncExit
+[6.578]  flash_f2_wait_for_last_operation():  FuncExit
+[6.578]  get_f2_flash_error_status():  FuncExit
+[6.593]  lock_flash_f2_prg_and_erase_ctrler():  FuncEntry
+[6.593]  flash_f2_wait_for_last_operation():  FuncEntry
+[6.593]  flash_f2_get_busy_status():  FuncEntry
+[6.593]  flash_f2_get_busy_status():  FuncExit
+[6.593]  flash_f2_wait_for_last_operation():  FuncExit
+[6.625]  lock_flash_f2_prg_and_erase_ctrler():  FuncExit
+[6.625]  stm32_f2_program_flash_memory():  STM32 device: flash programming successful 0x8001a58 
+[6.625]  stm32_f2_program_flash_memory():  FuncExit
+[6.625]  Socket_Write():  Tx: $OK#9a#00
+[6.625]  Socket_Read():  Rx: $vFlashDone#ea
+[6.625]  Socket_Write():  Tx: +
+[6.625]  STM32_AppReset():  Enter STM32_AppReset() function 
+[6.828]  STM32_AppReset():  NVIC_DFSR_REG	= 0x00000009
+[6.843]  STM32_AppReset():  NVIC_CFGFSR_REG	= 0x00000000
+[6.859]  STM32_AppReset():  XPSR = 0x01000000
+[6.859]  Socket_Write():  Tx: $OK#9a#00
+[6.859]  Socket_Read():  Rx: $Pf=44190008#8d
+[6.859]  Socket_Write():  Tx: +
+[6.859]  Socket_Write():  Tx: $OK#9a
+[6.859]  Socket_Read():  Rx: $m800186c,2#65
+[6.859]  Socket_Write():  Tx: +
+[6.859]  handle_packet():  Reading 0x2 bytes of memory from addr 0x800186c 
+[6.859]  Socket_Write():  Tx: $0024#c6
+[6.859]  Socket_Read():  Rx: $qTStatus#49
+[6.859]  Socket_Write():  Tx: +
+[6.859]  Socket_Write():  Tx: $#00
+[6.859]  Socket_Read():  Rx: $qTStatus#49
+[6.859]  Socket_Write():  Tx: +
+[6.859]  Socket_Write():  Tx: $#00
+[6.859]  Socket_Read():  Rx: $qTStatus#49
+[6.859]  Socket_Write():  Tx: +
+[6.859]  Socket_Write():  Tx: $#00
+[6.859]  Socket_Read():  Rx: $qTStatus#49
+[6.859]  Socket_Write():  Tx: +
+[6.859]  Socket_Write():  Tx: $#00
+[6.859]  Socket_Read():  Rx: $qTStatus#49
+[6.859]  Socket_Write():  Tx: +
+[6.859]  Socket_Write():  Tx: $#00
+[6.859]  Socket_Read():  Rx: $me0042004,4#8c
+[6.859]  Socket_Write():  Tx: +
+[6.859]  handle_packet():  Reading 0x4 bytes of memory from addr 0xe0042004 
+[6.875]  Socket_Write():  Tx: $07000000#87
+[6.875]  Socket_Read():  Rx: $m8001944,4#37
+[6.875]  Socket_Write():  Tx: +
+[6.875]  handle_packet():  Reading 0x4 bytes of memory from addr 0x8001944 
+[6.875]  Socket_Write():  Tx: $dff83cd0#92
+[6.875]  Socket_Read():  Rx: $Xe0042004,0:#ad
+[6.875]  Socket_Write():  Tx: +
+[6.875]  Socket_Write():  Tx: $OK#9a
+[6.875]  Socket_Read():  Rx: $Xe0042004,4:
+[6.875]  Socket_Write():  Tx: +
+[6.890]  Socket_Write():  Tx: $OK#9a
+[6.890]  Socket_Read():  Rx: $g#67
+[6.890]  Socket_Write():  Tx: +
+[6.906]  Socket_Write():  Tx: $0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000220ffffffff4419000800000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022000000000#d3
+[6.906]  Socket_Read():  Rx: $m8001944,4#37
+[6.906]  Socket_Write():  Tx: +
+[6.906]  handle_packet():  Reading 0x4 bytes of memory from addr 0x8001944 
+[6.921]  Socket_Write():  Tx: $dff83cd0#92
+[6.921]  Socket_Read():  Rx: $m800186c,2#65
+[6.921]  Socket_Write():  Tx: +
+[6.921]  handle_packet():  Reading 0x2 bytes of memory from addr 0x800186c 
+[6.921]  Socket_Write():  Tx: $0024#c6
+[6.921]  Socket_Read():  Rx: $m800186c,2#65
+[6.921]  Socket_Write():  Tx: +
+[6.921]  handle_packet():  Reading 0x2 bytes of memory from addr 0x800186c 
+[6.937]  Socket_Write():  Tx: $0024#c6
+[6.937]  Socket_Read():  Rx: $m8001868,2#3a
+[6.937]  Socket_Write():  Tx: +
+[6.937]  handle_packet():  Reading 0x2 bytes of memory from addr 0x8001868 
+[6.937]  Socket_Write():  Tx: $70b5#fe
+[6.937]  Socket_Read():  Rx: $qTStatus#49
+[6.937]  Socket_Write():  Tx: +
+[6.937]  Socket_Write():  Tx: $#00
+[6.937]  Socket_Read():  Rx: $qTStatus#49
+[6.937]  Socket_Write():  Tx: +
+[6.937]  Socket_Write():  Tx: $#00
+[6.937]  Socket_Read():  Rx: $Z1,8001868,2#84
+[6.937]  Socket_Write():  Tx: +
+[6.968]  Socket_Write():  Tx: $OK#9a
+[6.968]  Socket_Read():  Rx: $vCont?#49
+[6.968]  Socket_Write():  Tx: +
+[6.968]  Socket_Write():  Tx: $#00
+[6.968]  Socket_Read():  Rx: $Hc0#db
+[6.968]  Socket_Write():  Tx: +
+[6.968]  Socket_Write():  Tx: $#00
+[6.968]  Socket_Read():  Rx: $c#63
+[6.968]  Socket_Write():  Tx: +
+[6.968]  handle_packet():  TraceCaptureStart and SWV event set to APP_TRUE 
+[7.093]  Run_Server():  TraceCaptureStart and SWV event set to APP_FALSE 
+[7.109]  STM32_GetHaltReason():  NVIC_DFSR_REG = 0x00000002 
+[7.109]  HandleStopReply():  ST_LINK Halt Reason break point hit 
+ 
+[7.109]  Socket_Write():  Tx: $T05#b9
+[7.109]  Socket_Read():  Rx: $g#67
+[7.125]  Socket_Write():  Tx: +
+[7.140]  Socket_Write():  Tx: $0000000083690000bd010008501a000800000000000000000000000000000000000000000000000000000000000000000000000000000220831900086818000800000061000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022000000000#13
+[7.140]  Socket_Read():  Rx: $z1,8001868,2#a4
+[7.140]  Socket_Write():  Tx: +
+[7.140]  Socket_Write():  Tx: $OK#9a
+[7.140]  Socket_Read():  Rx: $m8001868,4#3c
+[7.140]  Socket_Write():  Tx: +
+[7.140]  handle_packet():  Reading 0x4 bytes of memory from addr 0x8001868 
+[7.140]  Socket_Write():  Tx: $70b58ab0#29
+[7.406]  Socket_Read():  Rx: $qfThreadInfo#bb
+[7.406]  Socket_Write():  Tx: +
+[7.406]  Socket_Write():  Tx: $l#6c
+[7.453]  Socket_Read():  Rx: $qfThreadInfo#bb
+[7.453]  Socket_Write():  Tx: +
+[7.453]  Socket_Write():  Tx: $l#6c
+[7.531]  Socket_Read():  Rx: $m2001ffc0,40#1f
+[7.531]  Socket_Write():  Tx: +
+[7.531]  handle_packet():  Reading 0x40 bytes of memory from addr 0x2001ffc0 
+[7.531]  Socket_Write():  Tx: $a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a51b130008501a00080000000000000000501a0008501a0008d71900080000000000000000000000007f190008#d0
+[13.437]  Socket_Read():  Rx: $qTStatus#49
+[13.437]  Socket_Write():  Tx: +
+[13.437]  Socket_Write():  Tx: $#00
+[13.437]  Socket_Read():  Rx: $c#63
+[13.437]  Socket_Write():  Tx: +
+[13.437]  handle_packet():  TraceCaptureStart and SWV event set to APP_TRUE 
+[13.578]  STM32_GetStatus():  ST_LINK device status: RUN_MODE
+[28.578]  STM32_GetStatus():  ST_LINK device status: RUN_MODE
+[43.672]  STM32_GetStatus():  ST_LINK device status: RUN_MODE
+[58.766]  STM32_GetStatus():  ST_LINK device status: RUN_MODE
+[67.422]  Socket_Read():  Rx: 
+[67.422]  parse_for_packet():  Received Ctrl-C from the client 
+[67.422]  Run_Server():  TraceCaptureStart and SWV event set to APP_FALSE 
+[67.453]  Socket_Write():  Tx: $S02#b5
+[67.453]  Socket_Read():  Rx: $g#67
+[67.453]  Socket_Write():  Tx: +
+[67.469]  Socket_Write():  Tx: $00000000a5a5a5a5a5a5a5a500000000a5a5a5a534000020a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5e0150020ed080008f20700080000006100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000e0ff0120e0150020#60
+[67.469]  Socket_Read():  Rx: $vKill;a410#33
+[67.469]  Socket_Write():  Tx: +
+[67.469]  Socket_Write():  Tx: $#00
+[67.469]  Socket_Read():  Rx: $k#6b
+[67.469]  Socket_Write():  Tx: +
+[67.469]  STM32_AppReset():  Enter STM32_AppReset() function 
+[67.781]  STM32_AppReset():  NVIC_DFSR_REG	= 0x00000009
+[67.797]  STM32_AppReset():  NVIC_CFGFSR_REG	= 0x00000000
+[67.813]  STM32_AppReset():  XPSR = 0x01000000
+[67.813]  Socket_Read():  Rx: $?#3f
+[67.813]  Socket_Write():  Tx: +
+[67.813]  Socket_Write():  Tx: $X09#c1
+[67.813]  get_a_packet():  Error in receiving data, exiting.. 
+[67.813]  Run_Server():  Encoutered a Socket Error, Exiting.. 
+[67.828]  STM32_GetStatus():  ST_LINK device status: HALT_MODE

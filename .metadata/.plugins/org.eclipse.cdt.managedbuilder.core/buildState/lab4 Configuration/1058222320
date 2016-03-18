@@ -1,0 +1,9 @@
+#
+#Tue Jan 26 09:08:35 CET 2016
+Debug/Application/User/main.o=1
+Debug/Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash.o=1
+Debug/Middlewares/FreeRTOS/queue.o=1
+Debug/Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ex.o=1
+Debug/Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o=1
+Debug/lab4\ Configuration=1
+Debug/lab4\ Configuration.elf=1
